@@ -11,7 +11,7 @@ class GetBestSellersControllerTest extends TestCase
 {
     private const string ENDPOINT_URL = '/api/v1/best-sellers';
 
-    public function testItReturnsResponseWithStatusOkWhenNoParametersAreGiven(): void
+    public function testItReturnsSuccessfulResponseWithNoGivenParameters(): void
     {
         Http::fake([
             '*' => Http::response(['status' => 'OK'], 200),
@@ -22,7 +22,7 @@ class GetBestSellersControllerTest extends TestCase
             ->assertJson(['status' => 'OK']);
     }
 
-    public function testItReturnsResponseWithStatusOkWhenGivenParametersAreValid(): void
+    public function testItReturnsSuccessfulResponseWithAllGivenParameters(): void
     {
         Http::fake([
             '*' => Http::response(['status' => 'OK'], 200),

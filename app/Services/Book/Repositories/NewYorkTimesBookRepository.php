@@ -30,13 +30,10 @@ final readonly class NewYorkTimesBookRepository implements BookRepository
 
     public function getBestSellers(GetBestSellersQuery $query): GetBestSellersResponse
     {
-        $response = $this->get(self::BEST_SELLERS_ENDPOINT, [
-            'author' => trim($query->author),
-            'title' => trim($query->title),
-            'isbn' => implode(';', array_unique($query->isbn)),
-            'offset' => $query->offset,
-        ]);
-        $json = $response->json();
+        $params = (array) $query;
+        $params['isbn'] = implode(';', $query->isbn);
+
+        $json = $this->get(self::BEST_SELLERS_ENDPOINT, $params)->json();
 
         if (!is_array($json)) {
             throw BookRepositoryException::hasFetchedUnexpectedContent($json);
