@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace app\Services\Book;
+namespace App\Services\Book;
 
-use app\Services\Book\Queries\GetBestSellersQuery;
-use app\Services\Book\Queries\GetBestSellersResponse;
+use App\Services\Book\Queries\GetBestSellersQuery;
+use App\Services\Book\Queries\GetBestSellersResponse;
 
 interface BookRepository
 {

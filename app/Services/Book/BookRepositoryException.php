@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace app\Services\Book;
+namespace App\Services\Book;
 
 final class BookRepositoryException extends \DomainException
 {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace tests\Unit\Services\Book;
 
-use app\Services\Book\BookRepositoryException;
+use App\Services\Book\BookRepositoryException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

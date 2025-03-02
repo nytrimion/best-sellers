@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace app\Services\Book\Repositories;
+namespace App\Services\Book\Repositories;
 
-use app\Services\Book\BookRepository;
-use app\Services\Book\BookRepositoryException;
-use app\Services\Book\Queries\GetBestSellersQuery;
-use app\Services\Book\Queries\GetBestSellersResponse;
+use App\Services\Book\BookRepository;
+use App\Services\Book\BookRepositoryException;
+use App\Services\Book\Queries\GetBestSellersQuery;
+use App\Services\Book\Queries\GetBestSellersResponse;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Http\Client\Response;
