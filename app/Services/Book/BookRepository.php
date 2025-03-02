@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace app\Services\Book;
 
-use app\Services\Book\Dto\GetBestSellers\GetBestSellersQuery;
-use app\Services\Book\Dto\GetBestSellers\GetBestSellersResponse;
+use app\Services\Book\Queries\GetBestSellersQuery;
+use app\Services\Book\Queries\GetBestSellersResponse;
 
 interface BookRepository
 {

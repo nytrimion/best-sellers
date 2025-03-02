@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace app\Services\Book\Dto\GetBestSellers;
+namespace app\Services\Book\Queries;
 
 final readonly class GetBestSellersResponse
 {

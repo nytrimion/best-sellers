@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'book' => [
+        'newyorktimes' => [
+            'api_url' => env('NYT_API_URL', ''),
+            'api_key' => env('NYT_API_KEY', ''),
+            'retries' => env('NYT_API_RETRIES', 3),
+            'timeout' => env('NYT_API_TIMEOUT', 5),
+        ],
+    ],
 ];

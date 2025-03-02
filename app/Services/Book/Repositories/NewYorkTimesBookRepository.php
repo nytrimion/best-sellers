@@ -6,8 +6,8 @@ namespace app\Services\Book\Repositories;
 
 use app\Services\Book\BookRepository;
 use app\Services\Book\BookRepositoryException;
-use app\Services\Book\Dto\GetBestSellers\GetBestSellersQuery;
-use app\Services\Book\Dto\GetBestSellers\GetBestSellersResponse;
+use app\Services\Book\Queries\GetBestSellersQuery;
+use app\Services\Book\Queries\GetBestSellersResponse;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Http\Client\Response;

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace tests\Unit\Services\Book\Repositories;
 
 use app\Services\Book\BookRepositoryException;
-use app\Services\Book\Dto\GetBestSellers\GetBestSellersQuery;
+use app\Services\Book\Queries\GetBestSellersQuery;
 use app\Services\Book\Repositories\NewYorkTimesBookRepository;
 use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
@@ -38,7 +38,7 @@ final class NewYorkTimesBookRepositoryTest extends TestCase
         Http::fake([
             '*' => Http::response([], 200),
         ]);
-        $response = $this->sut->getBestSellers(new GetBestSellersQuery(
+        $this->sut->getBestSellers(new GetBestSellersQuery(
             author: 'John',
             title: 'Whatever',
             isbn: ['0553293389', '9780553293388'],
