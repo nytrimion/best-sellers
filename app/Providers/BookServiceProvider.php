@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use app\Services\Book\BookRepository;
-use app\Services\Book\Repositories\NewYorkTimesBookRepository;
+use App\Services\Book\BookRepository;
+use App\Services\Book\Repositories\NewYorkTimesBookRepository;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;

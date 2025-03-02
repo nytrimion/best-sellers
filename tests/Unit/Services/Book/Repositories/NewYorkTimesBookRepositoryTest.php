@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace tests\Unit\Services\Book\Repositories;
 
-use app\Services\Book\BookRepositoryException;
-use app\Services\Book\Queries\GetBestSellersQuery;
-use app\Services\Book\Repositories\NewYorkTimesBookRepository;
+use App\Services\Book\BookRepositoryException;
+use App\Services\Book\Queries\GetBestSellersQuery;
+use App\Services\Book\Repositories\NewYorkTimesBookRepository;
 use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 

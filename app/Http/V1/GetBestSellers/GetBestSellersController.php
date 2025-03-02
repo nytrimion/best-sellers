@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace app\Http\V1\GetBestSellers;
+namespace App\Http\V1\GetBestSellers;
 
-use app\Services\Book\BookRepository;
-use app\Services\Book\Queries\GetBestSellersQuery;
+use App\Services\Book\BookRepository;
+use App\Services\Book\Queries\GetBestSellersQuery;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
