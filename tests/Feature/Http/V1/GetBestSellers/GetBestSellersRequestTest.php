@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace tests\Feature\Http\GetBestSellers;
+namespace tests\Feature\Http\V1\GetBestSellers;
 
-use App\Http\GetBestSellers\GetBestSellersRequest;
+use app\Http\V1\GetBestSellers\GetBestSellersRequest;
 use Illuminate\Support\Facades\Validator;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;

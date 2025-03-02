@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Http\GetBestSellers;
+namespace app\Http\V1\GetBestSellers;
 
 use Illuminate\Foundation\Http\FormRequest;
 
