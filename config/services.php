@@ -42,5 +42,8 @@ return [
             'retries' => env('NYT_API_RETRIES', 3),
             'timeout' => env('NYT_API_TIMEOUT', 5),
         ],
+        'cache' => [
+            'lifetime' => env('BOOK_CACHE_LIFETIME', 300),
+        ],
     ],
 ];
