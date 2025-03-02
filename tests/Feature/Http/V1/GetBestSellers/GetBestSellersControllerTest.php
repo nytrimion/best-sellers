@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace tests\Feature\Http\GetBestSellers;
+namespace tests\Feature\Http\V1\GetBestSellers;
 
 use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class GetBestSellersControllerTest extends TestCase
 {
-    private const string ENDPOINT_URL = '/api/best-sellers';
+    private const string ENDPOINT_URL = '/api/v1/best-sellers';
 
     public function testItReturnsResponseWithStatusOkWhenNoParametersAreGiven(): void
     {
