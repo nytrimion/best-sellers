@@ -3,8 +3,8 @@
 This Laravel application wraps the [New York Times Books API](https://developer.nytimes.com/docs/books-product/1/overview).
 This API supports 2 versions:
 
-- standard version 1: each request calls the New York Times API
-- cached version 2: New York Times API responses are cached according to given parameters 
+- version 1: each request calls the New York Times API
+- version 2: performance boost through caching New York Times API calls
 
 ## Installation
 
